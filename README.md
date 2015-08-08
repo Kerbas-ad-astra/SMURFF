@@ -18,7 +18,8 @@ Most of a real rocket's structural strength comes from the fuel inside of it, ra
 	* Command pods and cargo bays are excluded from getting buffed.  (So are engines, but that's only because they get buffed later by a different amount.)
 * SRBs are adjusted from 79% to 88% by dividing their mass by 2, in line with the Space Shuttle SRBs.
 * Engines' masses (excluding SRBs) are reduced by a factor of 2 (SSMEs mass 3.5 tons each, diameter of 2.5 meters, thrust of 2,000 kN; compare to the Mainsail, diameter of 2.5 meters, thrust 1500 kN, mass 6 tons -- cutting it in half to 3 tons feels about right).
-	* They're considered and patched separately from SRBs (and fuel-switching tanks, for that matter) because they're based on different comparisons.
+
+(Even though they use the same numerical factor, SRBs, non-SRBs, and fuel-switching tanks are considered and patched separately because they're based on different comparisons.)
 
 The result is that rockets have more Earth-like mass fractions and thus are able to achieve Earth-like payload masses without requiring the construction of horrible asparagus monsters.  To compare: with stock part masses, to get the Kerbal X capsule (plus heat shield) up into space, I need to convert the Kerbal X into the "Kerbal X Triple-Heavy", with 6 asparagus-staged size 2 boosters identical to the core (actually, identical plus the round X200-6R tank from TurboNisuReloaded) and an extended upper-stage tank (an X200-32 instead of the stock -16).  It gets a little over 10 tons into LEO (which includes the upper-stage tank and motor -- mass of the command pod, heat shield, and parachute is 5.7 tons) from an initial mass of over 470 tons.  With SMURFF, I can lose two of those boosters and get a little over 10 tons into orbit with a 302-ton rocket.   The Falcon 9 v1 got a little over 10 tons into orbit and weighed 335 tons, so I figure I'm close enough for Kerbal work.
 
