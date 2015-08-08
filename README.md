@@ -43,7 +43,7 @@ From there, just unzip the "SMURFF" folder into your GameData directory.
 
 ##Known and anticipated issues
 
-Mass data that isn't stored as a straight-up number can't be modified by this version of SMURFF.  This includes tankMass from FS/Interstellar Fuel Switch, which is stored as a series of semicolon-separated values.  If you know how to modify them with a ModuleManager patch, please tell me!  Otherwise, tanks that use that variable (*all fuel tanks* if you use Cryogenic Engines without removing the CryoEnginesFuelTankSwitcher patch!) will receive no buff from SMURFF.
+Mass data that isn't stored as a straight-up number can't be modified by this version of SMURFF.  This includes tankMass from FS/Interstellar Fuel Switch, which is stored as a series of semicolon-separated values.  If you know how to modify them with a ModuleManager patch, please tell me!  Otherwise, tanks that use that variable (**all fuel tanks** if you use Cryogenic Engines without removing the CryoEnginesFuelTankSwitcher patch!) will receive no buff from SMURFF.
 
 Please let me know in the forum thread or on [**the GitHub issue tracker**](https://github.com/Kerbas-ad-astra/SMURFF/issues) if you find any others!
 
