@@ -31,7 +31,32 @@ SMURFF depends on [**Module Manager**](http://forum.kerbalspaceprogram.com/threa
 
 SMURFF is mainly intended for use with [**Real Solar System**](http://forum.kerbalspaceprogram.com/threads/55145).  It's why I made it!
 
-If you want higher real-ish specific impulses as well as mass fractions (though 300-350 seconds is real-ish enough for kerolox engines), there's Nertea's [**Cryogenic Engines pack**](http://forum.kerbalspaceprogram.com/threads/117766), but be careful! By default, the pack will patch all LFO fuel tanks to be switchable to LH2/LO2 via InterstellarFuelSwitch, and because it uses the tankMass variable, SMURFF won't be able to give them a buff.  The relative penalty to tank mass outweighs the boost from the increased specific impulse.  To get a benefit from Cryogenic Engines, delete the CryoEnginesFuelTankSwitcher patch, install the CryoEnginesLFO patch from the "Extras" folder (so the ISRU patch can also be deleted), and then open that patch, look for **cryoEngine-375-1** and fix the typo to **cryoengine-375-1** (make the "E" lowercase).  Their specific impulses get knocked down a bit from when they burn hydrolox, but they're still more efficient than the stock engines (if a little heavier and a hair less powerful).  *(So, whoever it is that decides to index this mod on CKAN, you shouldn't actually put Cryogenic Engines in as a recommendation.  Not even CryoEngines-LFO, since that still installs the FuelSwitch patch!)*
+If you want higher real-ish specific impulses as well as mass fractions, there's Nertea's [**Cryogenic Engines pack**](http://forum.kerbalspaceprogram.com/threads/117766), but be careful! By default, the pack will patch all LFO fuel tanks to be switchable to LH2/LO2 via InterstellarFuelSwitch, and because it uses the tankMass variable, SMURFF won't be able to give them a buff.  The relative penalty to tank mass outweighs the boost from the increased specific impulse.  To get a benefit from Cryogenic Engines, you have two options:
+
+1. Delete the CryoEnginesFuelTankSwitcher patch, install the CryoEnginesLFO patch from the "Extras" folder (so the ISRU patch can also be deleted), and then open that patch, look for **cryoEngine-375-1** and fix the typo to **cryoengine-375-1** (make the "E" lowercase).  Their specific impulses get knocked down a bit from when they burn hydrolox, but they're still more efficient than the stock engines (if a little heavier and a hair less powerful).
+2. Replace the CryoEnginesFuelTankSwitcher patch with the one I made in [this post](http://forum.kerbalspaceprogram.com/threads/131023-1-0-x-SMURFF-Simple-Mass-adjUstments-for-Real-ish-Fuel-mass-Fractions-1-0-%282015-Aug-08%29?p=2136847&viewfull=1#post2136847).  As I demonstrate later in that post, you won't get quite as good mass for delta-V as in option 1 (because I don't improve the mass fraction quite as much), but you will have switchable fuel tanks (which is why I improve the mass fraction to 94-95% instead of 96-97%).
+
+*(So, whoever it is that decides to index this mod on CKAN, you probably shouldn't actually put Cryogenic Engines in as a recommendation, since either option requires deleting or modifying Cryogenic Engines's files, which CKAN doesn't allow.)*
+
+##Suggestions
+
+Other addons that bring "real-ish" capabilities and challenges to Kerbal Space Program include:
+
+* [**AntennaRange**](http://forum.kerbalspaceprogram.com/threads/56440), to "enforce and encourage antenna diversity".  Relaying is handled automatically, but only if you've used the right antennas for the job.  (We'll see how the 1.1 antenna system is when that comes.)
+	* If you use this with Real Solar System, be sure to grab [**my range-extending patch**](https://github.com/Kerbas-ad-astra/RealSolarSystem/blob/master/GameData/RealSolarSystem/Compatibility/AntennaRangeExtender.cfg).
+	* I'll also advertise my [**AntennaRange Relays**](http://forum.kerbalspaceprogram.com/threads/129704) contract pack (for [**Contract Configurator**](http://forum.kerbalspaceprogram.com/threads/101604)), to give some guidance and financial support for deploying relays.
+* [**SCANSat**](http://forum.kerbalspaceprogram.com/threads/80369), to make biome and elevation maps (handy for planning landings) and require just a bit more effort when scanning for resources.
+	* You should also consider the [**SCANSat Lite**](http://forum.kerbalspaceprogram.com/threads/120127) contract pack, to give some financial support for scanning missions.
+* [**USI Life Support**](http://forum.kerbalspaceprogram.com/threads/116790), for a life support system which is simple and forgiving (unless you configure it to kill Kerbals).
+	* [**USI Kolonization Systems**](http://forum.kerbalspaceprogram.com/threads/79588), for ISRU that allows self-sustaining colonies (with some effort).
+	* You should also consider picking up [**Extraplanetary Launchpads**](http://forum.kerbalspaceprogram.com/threads/59545) and [**OSE Workshop**](http://forum.kerbalspaceprogram.com/threads/108234) (and [**Kerbal Inventory System**](http://forum.kerbalspaceprogram.com/threads/113111), OSE's dependency), as an extension of NASA's real-world interest in in-situ manufacturing and repair.  (And to give your bases something new to do.)
+
+Feel free to suggest other "real-ish" addons!  To give you some idea of what I'm looking for, addons suggested with SMURFF shall adhere to the following criteria:
+
+1. They shall not require individual parts to be configured in order to function (as e.g. RealFuels does) -- if an addon can't work out-of-the-box with any other addons that people use, it doesn't belong in RishA.  (I guess AntennaRange could be said to violate this, since antennas do need their ranges configured individually, but antennas aren't that common and AR doesn't stop non-patched antennas from working, so I'm okay with including it.)
+2. They shall improve the realism of some aspect of KSP that is not very or not at all realistic.  (KSP has no life support whatsoever, so USI-LS is included, but it has mildly realistic aerodynamic and heating systems, so FAR and Deadly Reentry are not.)
+
+Of course, criterion zero is that I won't suggest an addon that I don't like and use myself.  :)
 
 ##Download and install
 
@@ -43,7 +68,7 @@ From there, just unzip the "SMURFF" folder into your GameData directory.
 
 ##Known and anticipated issues
 
-Mass data that isn't stored as a straight-up number can't be modified by this version of SMURFF.  This includes tankMass from FS/Interstellar Fuel Switch, which is stored as a series of semicolon-separated values.  If you know how to modify them with a ModuleManager patch, please tell me!  Otherwise, tanks that use that variable (**all fuel tanks** if you use Cryogenic Engines without removing the CryoEnginesFuelTankSwitcher patch!) will receive no buff from SMURFF.
+Mass data that isn't stored as a straight-up number can't be modified by this version of SMURFF.  This includes tankMass from FS/Interstellar Fuel Switch, which is stored as a series of semicolon-separated values.  If you know how to modify them with a ModuleManager patch, please tell me!  Otherwise, tanks that use that variable (**all fuel tanks** if you use Cryogenic Engines without removing or replacing the CryoEnginesFuelTankSwitcher patch!) will receive no buff from SMURFF.
 
 Please let me know in the forum thread or on [**the GitHub issue tracker**](https://github.com/Kerbas-ad-astra/SMURFF/issues) if you find any others!
 
@@ -55,7 +80,7 @@ Please let me know in the forum thread or on [**the GitHub issue tracker**](http
 
 As I get the time, I'll publish to CurseForge and KerbalStuff.  (Probably going to wait on KerbalStuff, since I'm thinking about renaming SMURFF and KS doesn't let mod authors rename things.)
 
-I had been content to leave SMURFF with just mass adjustments, since I didn't know of a way to modify specific impulses in a simple, universal way with Module Manager (since "0 350" or whatever isn't a number, I can't just add to it), but I've had a brainwave: MM *can* do regex replacement, so I can make a patch that says "if an atmoCurve entry starts with "0 3", replace it with "0 4", and the LFO motors will go from 300-something seconds to 400-something seconds, just like real rocket motors do.  I've got some more thinking and testing to do before I release that (for one thing, 300-something seconds is in line with kerosene-fueled rockets, which is arguably a better match for Liquid Fuel), and since it's not an adjustment to mass, I wouldn't be able to call this thing SMURFF anymore, so let me know if you're interested in **KSP-RishA: Real-ish Adjustments**.  (I'm also open to suggestions for the name.)
+I had been content to leave SMURFF with just mass adjustments, but solid rocket booster specific impulses are too low compared to stock boosters (LFO engines are fine, if we take Liquid Fuel to be a rough approximation of RP-1/kerosene).  Modifying atmosphere curves isn't quite as easy as modifying mass ("0 170" or whatever isn't a number, so I can't just add to it), but I'm working on a way to add about 30 seconds to the Isps of solid rocket motors.  If I get that to work, I won't be able to call this thing SMURFF anymore (or use my clever logo, unfortunately), since I won't just be adjusting mass, so let me know if you're interested in **KSP-RishA: Real-ish Adjustments**.  (I'm also open to suggestions for the name.)
 
 Until then, if you find any classes of parts (i.e. anything that can be described by using Module Manager to filter by module, resource, mass, etc.) that get horribly mistreated (either too much mass reduction or too little), I'll make an adjustment, but I have zero interest in making adjustments for individual parts -- the whole point of SMURFF is to avoid that level of complication.
 
