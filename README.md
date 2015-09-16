@@ -2,7 +2,7 @@
 
 *For people who want real-ish fuel mass fractions without too much hassle.*
 
-![SMURFF logo](https://raw.githubusercontent.com/Kerbas-ad-astra/SMURFF/master/SMURFF%20logo.png)
+![SMURFF logo](https://github.com/Kerbas-ad-astra/SMURFF/raw/master/SMURFF%20logo.png)
 
 ##Features
 
