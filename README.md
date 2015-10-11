@@ -82,7 +82,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* New patch to act on Procedural Parts.
 	* Based on RealFuels data and further research, LH2 and argon mass fractions no longer improved.
 	* Adjusted patch to properly grab all engine modules.
-	* Native support for fuel-switching patches from Stock Fuel Switch and Cryogenic Engines.
+	* Compatible with Stock Fuel Switch.
 
 ##Roadmap
 
