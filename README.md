@@ -19,7 +19,9 @@ Most of a real rocket's structural strength comes from the fuel inside of it, ra
 	* SRBs (baselining with the Kickback compared to the Space Shuttle SRBs) get their dry masses reduced by 40% and specific impulses get buffed by 40 seconds.  Their thrusts are left unchanged -- fuel density and TWR are already close to reality.
 * Probes, command pods, and cargo bays are excluded from getting their masses straight-up cut in half by the fuel-switching or engine patches.  (If they have engines, their thrusts still get improved by 50%.)
 
-The result is that rockets have more Earth-like mass fractions and thus are able to achieve Earth-like payload masses without requiring the construction of horrible asparagus monsters.  To compare: with stock part masses, to get the Mk1-2 capsule (plus parachute and heat shield) up into space, I need to convert the Kerbal X into the "Kerbal X Triple-Heavy" (or "Kerbal 7"), with 6 asparagus-staged size 2 boosters identical to the core (actually, identical plus the round X200-6R tank from TurboNisuReloaded) and an extended upper-stage tank (an X200-32 instead of the stock -16).  It gets just shy of 7 tons into LEO (not counting the spent upper stage) with a 465-ton rocket (not counting the payload) which blows up the launchpad at takeoff.  With SMURFF, I can lose two of those boosters and get 9.5 tons into orbit (not counting the spent upper stage) with a 296-ton rocket (not counting the payload).   The Falcon 9 v1 got 10.5 tons into orbit and weighed 335 tons, using slightly less efficient engines than the Skipper and Poodle, so I figure I'm close enough for Kerbal work.
+The result is that rockets have more Earth-like mass fractions and thus are able to achieve Earth-like payload masses without requiring the construction of horrible asparagus monsters.  To compare: with stock part masses, to get the Mk1-2 capsule (plus parachute and heat shield) up into space, I need to convert the Kerbal X into the "Kerbal X Triple-Heavy" (or "Kerbal 7"), with 6 asparagus-staged size 2 boosters identical to the core (actually, identical plus the round X200-6R tank from TurboNisuReloaded) and an extended upper-stage tank (an X200-32 instead of the stock -16).  It gets just shy of 7 tons into LEO (not counting the spent upper stage) with a 465-ton rocket (not counting the payload -- almost 70 times as much rocket as payload) which blows up the launchpad at takeoff.  With SMURFF, I can lose four of those boosters and get 6 tons into orbit (not counting the spent upper stage) with a 181-ton rocket (not counting the payload -- 30 times as much rocket as payload).   The Falcon 9 v1 got 10.5 tons into orbit and weighed 335 tons (31 times as much rocket as payload), using slightly less efficient engines than the Skipper and Poodle, so I figure I'm close enough for Kerbal work.
+
+
 
 ##Dependencies
 
@@ -29,9 +31,9 @@ SMURFF depends on [**Module Manager**](http://forum.kerbalspaceprogram.com/threa
 
 SMURFF is mainly intended for use with [**Real Solar System**](http://forum.kerbalspaceprogram.com/threads/55145).  It's why I made it!
 
-Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) and/or [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064) are recommended to get big rockets without big part counts.  [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/threads/60974) is also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is actually much steeper than from 2.5 to 3.75, so I've found 1.875m surprisingly handy.)
+Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) and/or [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064) are recommended to get big rockets without big part counts.  [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/threads/60974) is also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is actually much steeper than the jump from 2.5 to 3.75, so I've found 1.875m parts to be surprisingly handy.)
 
-If you want higher real-ish specific impulses as well as mass fractions, there's Nertea's [**Cryogenic Engines pack**](http://forum.kerbalspaceprogram.com/threads/117766).
+If you want higher real-ish specific impulses as well as mass fractions, there's Nertea's [**Cryogenic Engines pack**](http://forum.kerbalspaceprogram.com/threads/117766).  (Note that there is now no need to replace its fuel-switch patch, if you choose to use it -- in fact, you should probably make sure that you have the original patch, if you think you might have replaced it with the modified one I provided earlier, to ensure that tanks don't get double-buffed
 
 ##Suggestions
 
@@ -77,6 +79,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Based on RealFuels data and further research, LH2 and argon mass fractions no longer improved.
 	* Adjusted patch to properly grab all engine modules.
 	* Compatible with Stock Fuel Switch and Cryogenic Engines.
+		* If you replaced or modified Cryogenic Engines's fuel switcher patch, make sure you restore it to the original -- otherwise, tanks might get double-buffed.
 
 ##Roadmap
 
