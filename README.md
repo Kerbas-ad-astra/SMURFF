@@ -81,7 +81,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Adjusted patch to properly grab all engine modules.
 	* Compatible with Stock Fuel Switch and Cryogenic Engines.
 		* If you replaced or modified Cryogenic Engines's fuel switcher patch, make sure you restore it to the original -- otherwise, tanks might get double-buffed.
-** 2015 11 20 (1.1.1): Minor bug fixes.
+* 2015 11 20 (1.1.1): Minor bug fixes.
 	* Fixed Procedural Parts patch (thanks to speedwaystar).
 	* Excluded air-breathing jets, nuclear thermal rockets, monopropellant engines, and ion engines from TWR buffs.  (They're close enough to reality already.)
 
