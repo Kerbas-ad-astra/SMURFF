@@ -41,7 +41,6 @@ If you want higher real-ish specific impulses as well as mass fractions, there's
 Other addons that bring "real-ish" capabilities and challenges to Kerbal Space Program include:
 
 * [**AntennaRange**](http://forum.kerbalspaceprogram.com/threads/56440), to "enforce and encourage antenna diversity".  Relaying is handled automatically, but only if you've used the right antennas for the job.  (We'll see how the 1.1 antenna system is when that comes.)
-	* If you use this with Real Solar System, be sure to grab [**my range-extending patch**](https://github.com/Kerbas-ad-astra/RealSolarSystem/blob/master/GameData/RealSolarSystem/Compatibility/AntennaRangeExtender.cfg).
 	* I'll also advertise my [**AntennaRange Relays**](http://forum.kerbalspaceprogram.com/threads/129704) contract pack (for [**Contract Configurator**](http://forum.kerbalspaceprogram.com/threads/101604)), to give some guidance and financial support for deploying relays.
 * [**SCANSat**](http://forum.kerbalspaceprogram.com/threads/80369), to make biome and elevation maps (handy for planning landings) and require just a bit more effort when scanning for resources.
 * [**USI Life Support**](http://forum.kerbalspaceprogram.com/threads/116790), for a life support system which is simple and forgiving (unless you configure it to kill Kerbals).
