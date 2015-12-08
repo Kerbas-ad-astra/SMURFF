@@ -32,7 +32,7 @@ SMURFF depends on [**Module Manager**](http://forum.kerbalspaceprogram.com/threa
 
 SMURFF is mainly intended for use with [**Real Solar System**](http://forum.kerbalspaceprogram.com/threads/55145).  It's why I made it!
 
-Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) and/or [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064) are recommended to get big rockets without big part counts.  [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/threads/60974) is also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is actually much steeper than the jump from 2.5 to 3.75, so I've found 1.875m parts to be surprisingly handy.)
+Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) (alternatively, [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064)) are recommended to get big rockets without big part counts.  [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/threads/60974) is also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is actually much steeper than the jump from 2.5 to 3.75, so I've found 1.875m parts to be surprisingly handy.)
 
 If you want higher real-ish specific impulses as well as mass fractions, there's Nertea's [**Cryogenic Engines pack**](http://forum.kerbalspaceprogram.com/threads/117766).  (Note that there is now no need to replace its fuel-switch patch, if you choose to use it -- in fact, you should probably make sure that you have the original patch, if you think you might have replaced it with the modified one I provided earlier, to ensure that tanks don't get double-buffed.)
 
@@ -79,7 +79,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Based on RealFuels data and further research, LH2 and argon mass fractions no longer improved.
 	* Adjusted patch to properly grab all engine modules.
 	* Compatible with Stock Fuel Switch and Cryogenic Engines.
-		* If you replaced or modified Cryogenic Engines's fuel switcher patch, make sure you restore it to the original -- otherwise, tanks might get double-buffed.
+		* **If you replaced or modified Cryogenic Engines's fuel switcher patch, make sure you restore it to the original -- otherwise, tanks might get double-buffed.**
 * 2015 11 20 (1.1.1): Minor bug fixes.
 	* Fixed Procedural Parts patch (thanks to speedwaystar).
 	* Excluded air-breathing jets, nuclear thermal rockets, monopropellant engines, and ion engines from TWR buffs.  (They're close enough to reality already.)
