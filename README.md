@@ -85,7 +85,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Excluded air-breathing jets, nuclear thermal rockets, monopropellant engines, and ion engines from TWR buffs.  (They're close enough to reality already.)
 * 2015 11 22 (1.1.2): More compatibility (inspired by Atomic Age).
 	* Improved selectivity of engine mass buff by excluding multi-mode engines and IntakeAtm-breathing engines.  (All Oxidizer-burning engine modes will still get a thrust increase.)
-* 2015 12 xx (1.1.3): More selection adjustments.
+* 2015 12 07 (1.1.3): More selection adjustments.
 	* Changed engine mass buffs to apply to engines which only have oxidizer-burning modes (so that SpaceY's engines get buffed -- they use a MultiModeEngine module to simulate the all-nozzle vs. center-out/center-only modes of operation, so excluding all multi-mode engines wasn't fair.)
 
 ##Roadmap
