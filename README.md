@@ -89,7 +89,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Improved selectivity of engine mass buff by excluding multi-mode engines and IntakeAtm-breathing engines.  (All Oxidizer-burning engine modes will still get a thrust increase.)
 * 2015 12 07 (1.1.3): More selection adjustments.
 	* Changed engine mass buffs to apply to engines which only have oxidizer-burning modes (so that SpaceY's engines get buffed -- they use a MultiModeEngine module to simulate the all-nozzle vs. center-out/center-only modes of operation, so excluding all multi-mode engines wasn't fair.)
-* 2016 01 09 (1.1.4): Argon adaptation
+* 2016 01 08 (1.1.4): Argon adaptation
 	* New ArgonGas patch for the tank efficiency changes made in Near Future Propulsion 0.6.0.
 	* **I've made some slight changes in the backend for handling Cryogenic Engines.** In my testing, I haven't noticed any changes in spacecraft mass (either in the VAB or in flight), but please be careful!
 
