@@ -98,7 +98,8 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Added a "reserved mass" system so that engines and pods only modify mass which is not accounted for by fuel tanks and batteries.
 	* Added a "SMURFFCONFIG" section -- adjust the "tanklever", "enginelever", and "podlever" variables to control how much of a buff is applied.  1 for real-ish performance (default), 0 to leave stock values alone, and everything in between is in between.  Try 0.5 for the likes of 64k or SKY.
 	* Changed patches to run FOR[zSMURFF], so that the patches run later.  SpaceY's engines now get properly buffed when Cryogenic Engines is installed.  (SpaceY replaces the ModuleEnginesFX modules of some engines in that circumstance, and since SpaceY comes after SMURFF, the thrust buff was being overwritten.)
-	* Added a "fix" for parts whose mass gets sent into the negatives (i.e. any part which weighs less than it "should" by stockalike standards): their masses get negated to become positive again, and a dummy variable is left in their configs ("SMURFFnegmass = true") so that they stick out in ModuleManager.ConfigCache.
+	* Added a "fix" for parts whose mass gets sent into the negatives (i.e. any part which weighs less than it "should" by stockalike standards): their masses get restored to their initial values.
+	* Added support for "SMURFFExclude" -- add "SMURFFExclude = true" to any part you don't want to get buffed.
 
 ##Roadmap
 
