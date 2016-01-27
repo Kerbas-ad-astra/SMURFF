@@ -93,7 +93,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 * 2016 01 08 (1.1.4): Argon adaptation
 	* New ArgonGas patch for the tank efficiency changes made in Near Future Propulsion 0.6.0.
 	* **I've made some slight changes in the backend for handling Cryogenic Engines.** In my testing, I haven't noticed any changes in spacecraft mass (either in the VAB or in flight), but please be careful!
-* 2016 02 XX (1.2): Entry, Descent, and Landing
+* 2016 01 27 (1.2): Entry, Descent, and Landing
 	* Masses of crew containers and heat shields are reduced by half, to permit reduced (and reasonable) capsule ballistic coefficients.  Now pods are more likely slow down in time to get their chutes open.
 	* Added a "reserved mass" system so that engines and pods only modify mass which is not accounted for by fuel tanks and batteries.
 	* Added a "SMURFFCONFIG" section -- adjust the "tanklever", "enginelever", and "podlever" variables to control how much of a buff is applied.  1 for real-ish performance (default), 0 to leave stock values alone, and everything in between is in between.  Try 0.5 for the likes of 64k or SKY.
