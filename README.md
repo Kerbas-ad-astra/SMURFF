@@ -12,6 +12,8 @@ Most of a real rocket's structural strength comes from the fuel inside of it, ra
 
 * Stock and stockalike liquid fuel tanks (LFO, LF, Monoprop) have a fuel mass fraction of 87-89%; SMURFF increases this to 96-97% by reducing dry mass by 75%, putting them in line with real spacecraft fuel tanks.
 	* Tanks that have fuel-switching patches from Stock Fuel Switch or Cryogenic Engines will get the appropriate mass buff for their equivalent Liquid Fuel and Oxidizer contents.
+	* "Lifter" liquid-hydrogen tanks from CryoTanks get their LH2 mass fractions adjusted from 74% to 63% (65% increase in dry mass).  Because of the LFO buff, hydrolox "lifter" fuel tanks still go from 86% to 89% fuel by mass.
+	* Zero boiloff LH2 tanks get their LH2 mass fractions adjusted from 69% to 46% (166% increase in dry mass).
 	* Other parts with switchable fuel tanks get their dry masses divided by 4, except for parts which are switchable in-flight, which only get a 50% dry mass reduction.
 * Xenon gas tanks are adjusted from 56% to 90% (86% reduction in dry mass).  I've seen some NASA sources saying xenon tanks are 95% fuel (or suggesting that they will soon be so), others suggesting 85%, so I went with 90%.
 	* Argon gas tanks from Near Future Propulsion are adjusted from 56% to 62% fuel (20% reduction in dry mass).  They match the efficiency of stock xenon tanks for gameplay balance reasons, but in reality, xenon tanks are much more efficient, and argon not nearly as much (xenon atoms are heavier, so a much greater mass of xenon can be packed into a given tank design).  The benefit of argon is that it is more abundant (and thus cheaper) than xenon by orders of magnitude.  For large missions, the reduced fuel cost may be enough to make up for the mass penalty.
@@ -101,8 +103,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Added a "fix" for parts whose mass gets sent into the negatives (i.e. any part which weighs less than it "should" by stockalike standards): their masses get restored to their initial values.
 	* Added support for "SMURFFExclude" -- add "SMURFFExclude = true" to any part you don't want to get buffed.
 * 2016 01 29 (1.2.1): De-icing
-	* Modified to adapt to CryoTanks update (LH2 tanks no longer have a pure-OX mode, some variable names have changed).
-	* Beginning to implement rebalance of hydrolox tanks (no gameplay changes just yet).
+	* Adapted to new Cryogenic Tanks LH2 mass fractions and tank setups.  (LH2 tanks actually get hit with the nerf-bat.)
 
 ##Roadmap
 
