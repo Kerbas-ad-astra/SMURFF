@@ -102,7 +102,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Changed patches to run FOR[zSMURFF], so that the patches run later.  SpaceY's engines now get properly buffed when Cryogenic Engines is installed.  (SpaceY replaces the ModuleEnginesFX modules of some engines in that circumstance, and since SpaceY comes after SMURFF, the thrust buff was being overwritten.)
 	* Added a "fix" for parts whose mass gets sent into the negatives (i.e. any part which weighs less than it "should" by stockalike standards): their masses get restored to their initial values.
 	* Added support for "SMURFFExclude" -- add "SMURFFExclude = true" to any part you don't want to get buffed.
-* 2016 01 29 (1.2.1): De-icing
+* 2016 02 02 (1.2.1): De-icing
 	* Adapted to new Cryogenic Tanks LH2 mass fractions and tank setups.  (LH2 tanks actually get hit with the nerf-bat.)
 
 ##Roadmap
