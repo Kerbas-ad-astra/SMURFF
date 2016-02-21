@@ -1,6 +1,6 @@
 #SMURFF: Simple Module adjUstments for Real-ish Fuel-mass Fractions
 
-*For people who want real-ish fuel mass fractions without too much hassle.  Formerly Simple Mass adjUstments for Real-ish Fuel-mass Fractions.*
+*For people who want real-ish fuel mass fractions without too much hassle.  Formerly "Simple Mass adjUstments for Real-ish Fuel-mass Fractions."*
 
 ![SMURFF logo](https://github.com/Kerbas-ad-astra/SMURFF/raw/master/SMURFF%20logo.png)
 
@@ -24,6 +24,14 @@ Most of a real rocket's structural strength comes from the fuel inside of it, ra
 * Crew containers (pods, cockpits, cabins, etc.) and heat shields have their masses reduced by half (and their pyrolysisLossFactor doubled).  I justify this by looking at the mass-per-passenger of space capsules and jet liners, ballistic coefficents, and comparing crew cabins to fuel tanks of the same size.  For example, the Mk1-2 command pod weighs as much as the Apollo Command Module despite being nearly 40% smaller (by diameter -- 26% of the volume) and carrying half-sized astronauts.  The Mk1 and Mk2 crew cabins weigh as much as a full fuel tank of the same size, despite being mostly air-filled.  Same for heat shields -- the Apollo heat shield was 3.9 meters across and weighed 850 kg, vs. 2800 kg for the stock 3.75m heat shield.  (The reason that I didn't cut heat shield masses by 70% is so that shields can still be used for landing larger masses than just a capsule.)
 * Probes and cargo bays are excluded from getting their masses straight-up cut, even if they have engines or fuel-switching tanks.  (If they have engines, their thrusts still get improved, and if they have single-mode fuel tanks or fuel-switching tanks from Stock Fuel Switch or Cryogenic Engines, they will get the appropriate mass buff from those.)
 * These are all controlled by the "**tanklever**", "**enginelever**", and "**podlever**" values at the top of SMURFF.cfg.  When they're set to 1 (as they are by default), the above adjustments are made, and parts are left at stock performance values when they're set to 0.  In-between is in-between -- LFO and monoprop fuel tanks are about 93-94% fuel when tanklever is set to 0.5, TWRs are doubled (rather than quadrupled) when enginelever is set to 0.5, and pod and heat shield masses are reduced by a quarter instead of a half when podlever is set to 0.5.
+* To exclude a part from all patches, include "**SMURFFExclude = true**" in the top-level config.  To avoid griping from KSP when SMURFF is not installed, you use a patch like this one:
+
+```
+@PART[whatever_parts]:NEEDS[SMURFF]
+{
+	%SMURFFExclude = true
+}
+```
 
 The result is that rockets have more Earth-like mass fractions and thus are able to achieve Earth-like payload masses without requiring the construction of horrible asparagus monsters.  To compare: with stock part masses, to get the Mk1-2 capsule (plus parachute and heat shield) up into space, I need to convert the Kerbal X into the "Kerbal X Triple-Heavy" (or "Kerbal 7"), with 6 asparagus-staged size 2 boosters identical to the core (actually, identical plus the round X200-6R tank from TurboNisuReloaded) and an extended upper-stage tank (an X200-32 instead of the stock -16).  It gets just shy of 7 tons into LEO (not counting the spent upper stage) with a 465-ton rocket (not counting the payload -- almost 70 times as much rocket as payload) which blows up the launchpad at takeoff.  With SMURFF, I just have to make the Kerbal X into the "Kerbal Xtended" by doubling the upper-stage fuel tank (the stock Kerbal X is entirely capable of getting into orbit on its own, but the extension is necessary to add the heat shield...), putting 3.5 tons into orbit (not counting the spent upper stage) with a 114-ton rocket (not counting the payload -- 33 times as much rocket as payload).   The Falcon 9 v1 got 10.5 tons into orbit and weighed 335 tons (32 times as much rocket as payload), using slightly less efficient engines than the Skipper and Poodle, so I figure I'm close enough for Kerbal work.
 
@@ -63,7 +71,6 @@ Of course, criterion zero is that I won't suggest an addon that I don't like and
 
 * [**GitHub**](https://github.com/Kerbas-ad-astra/SMURFF/releases)
 * CurseForge
-* KerbalStuff
 
 From there, just unzip the "SMURFF" folder into your GameData directory.
 
@@ -104,10 +111,12 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Added support for "SMURFFExclude" -- add "SMURFFExclude = true" to any part you don't want to get buffed.
 * 2016 02 02 (1.2.1): De-icing
 	* Adapted to new Cryogenic Tanks LH2 mass fractions and tank setups.  (LH2 tanks actually get hit with the nerf-bat.)
+* 2016 02 20 (1.2.2): Sore throat
+	* Added some new patch logic to catch ablative engines.
 
 ##Roadmap
 
-As I get the time, I'll publish to CurseForge and KerbalStuff.
+As I get the time, I'll publish to CurseForge and CKAN.
 
 If you find any classes of parts (i.e. anything that can be described by using Module Manager to filter by module, resource, mass, etc.) that get horribly mistreated, I'll make an adjustment, but I have zero interest in making adjustments for individual parts -- the whole point of SMURFF is to avoid that level of complication.
 
