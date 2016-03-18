@@ -122,7 +122,7 @@ None at this time.  Please let me know in [**the forum thread**](http://forum.ke
 
 As I get the time, I'll publish to CurseForge and CKAN.
 
-If you find any classes of parts (i.e. anything that can be described by using Module Manager to filter by module, resource, mass, etc.) that get horribly mistreated, I'll make an adjustment, but I have zero interest in making adjustments for individual parts -- the whole point of SMURFF is to avoid that level of complication.
+If you find any classes of parts (i.e. anything that can be described by using Module Manager to filter by module, resource, mass, etc.) that get horribly mistreated, I'll make an adjustment.  That being said, I'm not planning to make special patches for parts that are already themselves outliers -- the whole point of SMURFF is to avoid that level of complication.
 
 ##Credits
 
