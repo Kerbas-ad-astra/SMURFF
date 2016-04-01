@@ -116,7 +116,7 @@ None at this time.  Please let me know in [**the forum thread**](http://forum.ke
 * 2016 03 17 (1.3): Wild Blue Yonder
 	* Parts with WBIResourceSwitcher (e.g. the Titan fuel tanks from MOLE) are now included in the switchable-tanks patches.
 	* Switchable (FS and Interstellar Fuel Switch) tanks with different tankMasses now get proper mass buffs, thanks to the new array-editing features in Module Manager.
-		* This feature is only present in MM version 2.6.16 or later, so **this version and later versions are not compatible with 1.0.4.**
+		* This feature is only present in MM version 2.6.16 or later, so **this version and later versions are not compatible with KSP 1.0.4.**
 
 ##Roadmap
 
