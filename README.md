@@ -47,9 +47,7 @@ SMURFF depends on [**Module Manager**](http://forum.kerbalspaceprogram.com/threa
 
 SMURFF is mainly intended for use with [**Real Solar System**](http://forum.kerbalspaceprogram.com/threads/55145).  It's why I made it, and that's where the default balance is set.  Try setting the levers to 0.5 for intermediate solar systems, like 64K or SKY.
 
-Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) (alternatively, [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064)) are recommended to get big rockets without big part counts.  [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/threads/60974) is also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is actually much steeper than the jump from 2.5 to 3.75, so I've found 1.875m parts to be surprisingly handy.)
-
-If you want higher real-ish specific impulses as well as mass fractions, there's Nertea's [**Cryogenic Engines pack**](http://forum.kerbalspaceprogram.com/threads/117766).  (Note that there is now no need to replace its fuel-switch patch, if you choose to use it -- in fact, you should probably make sure that you have the original patch, if you think you might have replaced it with the modified one I provided for the initial release, to ensure that tanks don't get double-buffed.)
+Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) (alternatively, [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064)) are recommended to get big rockets without big part counts.  1.875m rocket parts from [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/threads/60974) (plus [**HGR Community Fixes**](http://forum.kerbalspaceprogram.com/index.php?/topic/131556-104-5-hgr-community-fixes-home-grown-fixes-for-home-grown-rockets-v12-2016-mar-01/) by yours truly) and [**MOLE**](http://forum.kerbalspaceprogram.com/index.php?/topic/94352-alpha-11-mark-one-laboratory-extensions-mole-v0503/) are also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is actually much steeper than the jump from 2.5 to 3.75, so I've found 1.875m parts to be surprisingly handy.)
 
 ##Suggestions
 
@@ -59,8 +57,10 @@ Other addons that bring "real-ish" capabilities and challenges to Kerbal Space P
 	* I'll also advertise my [**AntennaRange Relays**](http://forum.kerbalspaceprogram.com/threads/129704) contract pack (for [**Contract Configurator**](http://forum.kerbalspaceprogram.com/threads/101604)), to give some guidance and financial support for deploying relays.
 * [**SCANSat**](http://forum.kerbalspaceprogram.com/threads/80369), to make biome and elevation maps (handy for planning landings) and require just a bit more effort when scanning for resources.
 * [**USI Life Support**](http://forum.kerbalspaceprogram.com/threads/116790), for a life support system which is simple and forgiving (unless you configure it to kill Kerbals).
+	* LouisB3's [**USILS patches**](https://github.com/LouisB3/USILS-Patches) and [**UKS-KPBS compatibility patches**](https://github.com/LouisB3/UKS-KPBS_Compatibility) to let other mods' base parts contribute more to a station's habitability.
 	* [**USI Kolonization Systems**](http://forum.kerbalspaceprogram.com/threads/79588), for ISRU that allows self-sustaining colonies (with some effort).
-	* You should also consider picking up [**Extraplanetary Launchpads**](http://forum.kerbalspaceprogram.com/threads/59545) and [**OSE Workshop**](http://forum.kerbalspaceprogram.com/threads/108234) (and [**Kerbal Inventory System**](http://forum.kerbalspaceprogram.com/threads/113111), OSE's dependency), as an extension of NASA's real-world interest in in-situ manufacturing and repair.  (And to give your bases something new to do.)
+	* You should also consider picking up [**Extraplanetary Launchpads**](http://forum.kerbalspaceprogram.com/threads/59545) and [**OSE Workshop**](http://forum.kerbalspaceprogram.com/threads/108234) (and [**Kerbal Inventory System**](http://forum.kerbalspaceprogram.com/threads/113111), OSE's dependency), as an extension of NASA's real-world interest in in-situ manufacturing and repair.  (And to give your bases something new to do.
+* Nertea's [**Cryogenic Engines**](http://forum.kerbalspaceprogram.com/threads/117766), [**Kerbal Atomics**](http://forum.kerbalspaceprogram.com/index.php?/topic/130503-105-kerbal-atomics-fancy-nuclear-engines-20022016-fixes-nfe-support/), and [**Near Future Technologies**](http://forum.kerbalspaceprogram.com/index.php?/topic/47786-105-near-future-technologies-merry-christmas-updated-all-to-105/) provide cryogenic, nuclear thermal, and ion and plasma propulsion systems, as well as a simple boiloff and boiloff mitigation mechanism for liquid hydrogen.  SMURFF will adjust their respective fuel tanks to match their actual or predicted performance.  (Except for lithium, which I haven't found any references for.)
 
 Feel free to suggest other "real-ish" addons!  To give you some idea of what I'm looking for, addons suggested with SMURFF shall adhere to the following criteria:
 
@@ -117,6 +117,11 @@ None at this time.  Please let me know in [**the forum thread**](http://forum.ke
 	* Parts with WBIResourceSwitcher (e.g. the Titan fuel tanks from MOLE) are now included in the switchable-tanks patches.
 	* Switchable (FS and Interstellar Fuel Switch) tanks with different tankMasses now get proper mass buffs, thanks to the new array-editing features in Module Manager.
 		* This feature is only present in MM version 2.6.16 or later, so **this version and later versions are not compatible with KSP 1.0.4.**
+* 2016 05 XX (1.4): Inb4B9
+	* Handles B9 Part Switcher, and the corresponding updates to Cryogenic Engines.
+		* Also changed patches to run FOR[zzz_SMURFF], so that it comes after the cryotanks patch.
+		* Because the corresponding version of Cryogenic Engines was released for KSP 1.1.2, **this version and later versions are not compatible with KSP 1.0.5, 1.1.0, or 1.1.1.**
+	* Handles the tankResourceMassDivider variable from the generic IFS patch.
 
 ##Roadmap
 
