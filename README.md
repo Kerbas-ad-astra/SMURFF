@@ -28,7 +28,7 @@ The specific adjustments are as follows:
 	* Other parts with switchable fuel tanks get their dry masses divided by 4, except for parts which are switchable in-flight, which only get a 50% dry mass reduction.
 * Xenon gas tanks are adjusted from 56% to 90% (86% reduction in dry mass).  I've seen some NASA sources saying xenon tanks are 95% fuel (or suggesting that they will soon be so), others suggesting 85%, so I went with 90%.
 	* Argon gas tanks from Near Future Propulsion are adjusted from 56% to 62% fuel (20% reduction in dry mass).  They match the efficiency of stock xenon tanks for gameplay balance reasons, but in reality, xenon tanks are much more efficient, and argon not nearly as much (xenon atoms are heavier, so a much greater mass of xenon can be packed into a given tank design).  The benefit of argon is that it is more abundant (and thus cheaper) than xenon by orders of magnitude.  For large missions, the reduced fuel cost may be enough to make up for the mass penalty.
-	* If anyone has a reference for the mass-efficiency of lithium storage and vaporization systems for spacecraft, I'd be happy to hear it.  :)  Until then, I'm leaving the lithium tanks as-is.
+	* If anyone has a reference for the mass-efficiency of lithium storage and vaporization systems for spacecraft, I'd be happy to hear it.  :)  Until then, I'm buffing them to 84% fuel, which corresponds to a volume density between argon and ZBO.
 * Bipropellant (LFO and LH2/Ox -- or anything with Oxidizer) rocket engines' thrusts are increased by 50%.  Any that are not crew containers or multi-mode engines also get a 62.5% reduction in mass.  Comparing the stock LFO engines to real RP-1/LOX rockets (as opposed to the LH2/LOX SSME, as I did previously), the "orbital" (i.e. stackable) stock engines have TWRs from 15-25, while real engines have TWRs from 60-100 (and getting up to 150 nowadays), so the TWRs need to be quadrupled.  The Skipper is actually a pretty good analog to the Merlin (several hundred kN of thrust, 2-3 meters tall), but rather than just cutting the weight to match TWRs, I increase the thrust so that stock rockets don't need ridiculous numbers of engines (recall that SpaceX uses nine Merlins on their first stages -- and incidentally, it turns out that SpaceY engines get their TWRs pushed into the 120-150 range, just like SpaceX's).
 	* SRBs (baselining with the Kickback compared to the Space Shuttle SRBs) get their dry masses reduced by 40% and specific impulses get buffed by 40 seconds.  Their thrusts are left unchanged -- fuel density and TWR are already close to reality.
 	* Nuclear thermal rockets, jet engines, monopropellant rockets, and ion thrusters are left alone.  (Oxidizer-burning modes of multi-mode engines still get the thrust buff.)
@@ -122,6 +122,7 @@ None at this time.  Please let me know in [**the forum thread**](http://forum.ke
 		* Also changed patches to run FOR[zzz_SMURFF], so that it comes after the cryotanks patch.
 		* Because the corresponding version of Cryogenic Engines was released for KSP 1.1.2, **this version and later versions are not compatible with KSP 1.0.5, 1.1.0, or 1.1.1.**
 	* Handles the tankResourceMassDivider variable from the generic IFS patch.
+	* Lithium tanks now get buffed.
 
 ##Roadmap
 
