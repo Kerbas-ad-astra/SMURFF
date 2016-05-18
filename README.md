@@ -117,7 +117,7 @@ None at this time.  Please let me know in [**the forum thread**](http://forum.ke
 	* Parts with WBIResourceSwitcher (e.g. the Titan fuel tanks from MOLE) are now included in the switchable-tanks patches.
 	* Switchable (FS and Interstellar Fuel Switch) tanks with different tankMasses now get proper mass buffs, thanks to the new array-editing features in Module Manager.
 		* This feature is only present in MM version 2.6.16 or later, so **this version and later versions are not compatible with KSP 1.0.4.**
-* 2016 05 XX (1.4): Inb4B9
+* 2016 05 17 (1.4): Inb4B9
 	* Handles B9 Part Switcher, and the corresponding updates to Cryogenic Engines.
 		* Also changed patches to run FOR[zzz_SMURFF], so that it comes after the cryotanks patch.
 		* Because the corresponding version of Cryogenic Engines was released for KSP 1.1.2, **this version and later versions are not compatible with KSP 1.0.5, 1.1.0, or 1.1.1.**
