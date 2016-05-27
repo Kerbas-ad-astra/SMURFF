@@ -22,13 +22,16 @@ There are some built-in protections to prevent part masses from being sent into 
 The specific adjustments are as follows:
 
 * Stock and stockalike liquid fuel tanks (LFO, LF, Monoprop) have a fuel mass fraction of 87-89%; SMURFF increases this to 96-97% by reducing dry mass by 75%, putting them in line with real spacecraft fuel tanks.
-	* Tanks that have fuel-switching patches from Stock Fuel Switch or Cryogenic Engines will get the appropriate mass buff for their equivalent Liquid Fuel and Oxidizer contents.
-	* "Lifter" liquid-hydrogen tanks from CryoTanks get their LH2 mass fractions adjusted from 74% to 63% (65% *increase* in dry mass).  Because of the LFO buff, hydrolox "lifter" fuel tanks still go from 86% to 89% fuel by mass.
-	* Zero boiloff LH2 tanks get their LH2 mass fractions adjusted from 69% to 46% (166% *increase* in dry mass).
+	* Tanks that have fuel-switching patches from Stock Fuel Switch will get the appropriate mass buff for their equivalent Liquid Fuel and Oxidizer contents.
 	* Other parts with switchable fuel tanks get their dry masses divided by 4, except for parts which are switchable in-flight, which only get a 50% dry mass reduction.
 * Xenon gas tanks are adjusted from 56% to 90% (86% reduction in dry mass).  I've seen some NASA sources saying xenon tanks are 95% fuel (or suggesting that they will soon be so), others suggesting 85%, so I went with 90%.
+* Ore tanks are adjusted from 86% to 95% ore-by-mass (70% reduction in dry mass), to baseline against 
+* Several mod resources are also handled (mostly from Nertea's various addons, since those have enough parts to produce a consistent balance).
+	* "Lifter" liquid-hydrogen tanks from CryoTanks get their LH2 mass fractions adjusted from 74% to 63% (65% *increase* in dry mass).  Because of the LFO buff, hydrolox "lifter" fuel tanks still go from 86% to 89% fuel by mass.
+	* Zero boiloff LH2 tanks get their LH2 mass fractions adjusted from 69% to 46% (166% *increase* in dry mass).
 	* Argon gas tanks from Near Future Propulsion are adjusted from 56% to 62% fuel (20% reduction in dry mass).  They match the efficiency of stock xenon tanks for gameplay balance reasons, but in reality, xenon tanks are much more efficient, and argon not nearly as much (xenon atoms are heavier, so a much greater mass of xenon can be packed into a given tank design).  The benefit of argon is that it is more abundant (and thus cheaper) than xenon by orders of magnitude.  For large missions, the reduced fuel cost may be enough to make up for the mass penalty.
 	* If anyone has a reference for the mass-efficiency of lithium storage and vaporization systems for spacecraft, I'd be happy to hear it.  :)  Until then, I'm buffing them to 84% fuel, which corresponds to a volume density between argon and ZBO.
+	* Karbonite is not handled at this time, as its tanks' mass efficiencies are already better than 95%.
 * Bipropellant (LFO and LH2/Ox -- or anything with Oxidizer) rocket engines' thrusts are increased by 50%.  Any that are not crew containers or multi-mode engines also get a 62.5% reduction in mass.  Comparing the stock LFO engines to real RP-1/LOX rockets (as opposed to the LH2/LOX SSME, as I did previously), the "orbital" (i.e. stackable) stock engines have TWRs from 15-25, while real engines have TWRs from 60-100 (and getting up to 150 nowadays), so the TWRs need to be quadrupled.  The Skipper is actually a pretty good analog to the Merlin (several hundred kN of thrust, 2-3 meters tall), but rather than just cutting the weight to match TWRs, I increase the thrust so that stock rockets don't need ridiculous numbers of engines (recall that SpaceX uses nine Merlins on their first stages -- and incidentally, it turns out that SpaceY engines get their TWRs pushed into the 120-150 range, just like SpaceX's).
 	* SRBs (baselining with the Kickback compared to the Space Shuttle SRBs) get their dry masses reduced by 40% and specific impulses get buffed by 40 seconds.  Their thrusts are left unchanged -- fuel density and TWR are already close to reality.
 	* Nuclear thermal rockets, jet engines, monopropellant rockets, and ion thrusters are left alone.  (Oxidizer-burning modes of multi-mode engines still get the thrust buff.)
@@ -76,9 +79,7 @@ Of course, criterion zero is that I won't suggest an addon that I don't like and
 
 From there, just unzip the "SMURFF" folder into your GameData directory.
 
-##Known and anticipated issues
-
-None at this time.  Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com/threads/131023) or on [**the GitHub issue tracker**](https://github.com/Kerbas-ad-astra/SMURFF/issues) if you find any!
+Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com/threads/131023) or on [**the GitHub issue tracker**](https://github.com/Kerbas-ad-astra/SMURFF/issues) if you find any issues!
 
 ##Version history and changelog
 
@@ -123,12 +124,16 @@ None at this time.  Please let me know in [**the forum thread**](http://forum.ke
 		* Because the corresponding version of Cryogenic Engines was released for KSP 1.1.2, **this version and later versions are not compatible with KSP 1.0.5, 1.1.0, or 1.1.1.**
 	* Handles the tankResourceMassDivider variable from the generic IFS patch.
 	* Lithium tanks now get buffed.
+* 2016 05 XX (1.5): Ore Rly?
+	* Ore tanks are now adjusted, baselined against 55-gallon drums.
+	* Compatible with tank types included in Near Future Construction 0.6.2.
+	* Added new "Extras" folder for patches that are too part-specific to be included in the main distribution.  The first Extra patch is for the CryoX and soft tanks from Ven's Stock Revamp.  I make no promises about their balance when used with CryoTanks or other fuel-switching plugins...
 
 ##Roadmap
 
-As I get the time, I'll publish to CurseForge and CKAN.
+As I get the time, I'll publish to CurseForge.
 
-If you find any classes of parts (i.e. anything that can be described by using Module Manager to filter by module, resource, mass, etc.) that get horribly mistreated, I'll make an adjustment.  That being said, I'm not planning to make special patches for parts that are already themselves outliers -- the whole point of SMURFF is to avoid that level of complication.
+If you find any classes of parts (i.e. anything that can be described by using Module Manager to filter by module, resource, mass, etc.) that get horribly mistreated, I'll make an adjustment.  That being said, I'm not planning to include special patches for parts that are already themselves outliers in the main distribution (although I *might* add some to the "Extras" folder) -- the whole point of SMURFF is to avoid that level of complication.
 
 ##Credits
 
