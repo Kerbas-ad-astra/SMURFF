@@ -124,7 +124,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 		* Because the corresponding version of Cryogenic Engines was released for KSP 1.1.2, **this version and later versions are not compatible with KSP 1.0.5, 1.1.0, or 1.1.1.**
 	* Handles the tankResourceMassDivider variable from the generic IFS patch.
 	* Lithium tanks now get buffed.
-* 2016 05 XX (1.5): Ore Rly?
+* 2016 05 26 (1.5): Ore Rly?
 	* Ore tanks are now adjusted, baselined against 55-gallon drums.
 	* Compatible with tank types included in Near Future Construction 0.6.2.
 	* Added new "Extras" folder for patches that are too part-specific to be included in the main distribution.  The first Extra patch is for the CryoX and soft tanks from Ven's Stock Revamp.  I make no promises about their balance when used with CryoTanks or other fuel-switching plugins...
