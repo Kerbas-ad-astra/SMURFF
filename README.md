@@ -25,7 +25,7 @@ The specific adjustments are as follows:
 	* Tanks that have fuel-switching patches from Stock Fuel Switch will get the appropriate mass buff for their equivalent Liquid Fuel and Oxidizer contents.
 	* Other parts with switchable fuel tanks get their dry masses divided by 4, except for parts which are switchable in-flight, which only get a 50% dry mass reduction.
 * Xenon gas tanks are adjusted from 56% to 90% (86% reduction in dry mass).  I've seen some NASA sources saying xenon tanks are 95% fuel (or suggesting that they will soon be so), others suggesting 85%, so I went with 90%.
-* Ore tanks are adjusted from 86% to 95% ore-by-mass (70% reduction in dry mass), to baseline against 
+* Ore tanks are adjusted from 86% to 95% ore-by-mass (70% reduction in dry mass), to baseline against 55-gallon drums.
 * Several mod resources are also handled (mostly from Nertea's various addons, since those have enough parts to produce a consistent balance).
 	* "Lifter" liquid-hydrogen tanks from CryoTanks get their LH2 mass fractions adjusted from 74% to 63% (65% *increase* in dry mass).  Because of the LFO buff, hydrolox "lifter" fuel tanks still go from 86% to 89% fuel by mass.
 	* Zero boiloff LH2 tanks get their LH2 mass fractions adjusted from 69% to 46% (166% *increase* in dry mass).
