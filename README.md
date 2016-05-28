@@ -128,8 +128,10 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Ore tanks are now adjusted, baselined against 55-gallon drums.
 	* Compatible with tank types included in Near Future Construction 0.6.2.
 	* Added new "Extras" folder for patches that are too part-specific to be included in the main distribution.  The first Extra patch is for the CryoX and soft tanks from Ven's Stock Revamp.  I make no promises about their balance when used with CryoTanks or other fuel-switching plugins...
-* 2016 05 08 (1.5.1): Mass Deregulation
+* 2016 05 28 (1.5.1): Mass Deregulation
 	* Relaxed one of the "overdraft protection" checks.
+* 2016 05 28 (1.5.2): Ore you sure?
+	* Added procedural ore tank type.
 
 ##Roadmap
 
