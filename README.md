@@ -132,6 +132,8 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Relaxed one of the "overdraft protection" checks.
 * 2016 05 28 (1.5.2): Ore you sure?
 	* Added procedural ore tank type.
+* 2016 05 28 (1.5.3): B9-B
+	* Made the CryoTank patches less brittle, to handle parts with multiple B9PartSwitch modules (e.g. Fuel Tanks Plus).
 
 ##Roadmap
 
