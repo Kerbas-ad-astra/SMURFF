@@ -149,4 +149,4 @@ Even more thanks to ialdeboath and sarbian for the power of Module Manager.  Ser
 
 ##License
 
-Simple Module adjUstments for Real-ish Fuel-mass Fractions ("SMURFF") is copyright 2015 Kerbas_ad_astra.  Configuration files are released under the [**Apache 2.0 license**](https://www.apache.org/licenses/LICENSE-2.0).  All other rights (e.g. the SMURFF logo) reserved.
+Simple Module adjUstments for Real-ish Fuel-mass Fractions ("SMURFF") is copyright 2016 Kerbas_ad_astra.  Configuration files are released under the [**Apache 2.0 license**](https://www.apache.org/licenses/LICENSE-2.0).  All other rights (e.g. the SMURFF logo) reserved.
