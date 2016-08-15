@@ -134,6 +134,9 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Added procedural ore tank type.
 * 2016 05 28 (1.5.3): B9-B
 	* Made the CryoTank patches less brittle, to handle parts with multiple B9PartSwitch modules (e.g. Fuel Tanks Plus).
+* 2016 08 15 (1.5.4): Tanks F-Ore Nothing
+	* Added an "Extra" patch to fix the procedural ore tank.  If you're using Procedural Parts, drop the "ProcOreFixer.cfg" patch in your GameData folder (anywhere will do).	
+	* The license is changed to the GPL v3 (or later).
 
 ##Roadmap
 
@@ -149,4 +152,4 @@ Even more thanks to ialdeboath and sarbian for the power of Module Manager.  Ser
 
 ##License
 
-Simple Module adjUstments for Real-ish Fuel-mass Fractions ("SMURFF") is copyright 2016 Kerbas_ad_astra.  Configuration files are released under the [**Apache 2.0 license**](https://www.apache.org/licenses/LICENSE-2.0).  All other rights (e.g. the SMURFF logo) reserved.
+Simple Module adjUstments for Real-ish Fuel-mass Fractions ("SMURFF") is copyright 2016 Kerbas_ad_astra.  Configuration files are released under the [**GPL v3 license**](https://www.gnu.org/licenses/gpl-3.0) (or any later version).  Any redistributions must use a different name and folder (per section 7c).  All other rights (e.g. the SMURFF logo) reserved.
