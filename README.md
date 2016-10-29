@@ -50,24 +50,22 @@ SMURFF depends on [**Module Manager**](http://forum.kerbalspaceprogram.com/threa
 
 SMURFF is mainly intended for use with [**Real Solar System**](http://forum.kerbalspaceprogram.com/threads/55145).  It's why I made it, and that's where the default balance is set.  Try setting the levers to 0.5 for intermediate solar systems, like 64K or SKY.
 
-Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) (alternatively, [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064)) are recommended to get big rockets without big part counts.  1.875m rocket parts from [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/threads/60974) (plus [**HGR Community Fixes**](http://forum.kerbalspaceprogram.com/index.php?/topic/131556-104-5-hgr-community-fixes-home-grown-fixes-for-home-grown-rockets-v12-2016-mar-01/) by yours truly) and [**MOLE**](http://forum.kerbalspaceprogram.com/index.php?/topic/94352-alpha-11-mark-one-laboratory-extensions-mole-v0503/) are also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is actually much steeper than the jump from 2.5 to 3.75, so I've found 1.875m parts to be surprisingly handy.)
+Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) (alternatively, [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064)) are recommended to get big rockets without big part counts.  1.875m rocket parts from [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/threads/60974) (plus [**HGR Community Fixes**](http://forum.kerbalspaceprogram.com/index.php?/topic/131556-104-5-hgr-community-fixes-home-grown-fixes-for-home-grown-rockets-v12-2016-mar-01/) by yours truly) and [**MOLE**](http://forum.kerbalspaceprogram.com/index.php?/topic/94352-alpha-11-mark-one-laboratory-extensions-mole-v0503/) are also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is proportionally much steeper than the jump from 2.5 to 3.75, so I've found 1.875m parts to be surprisingly handy.)
 
 ##Suggestions
 
 Other addons that bring "real-ish" capabilities and challenges to Kerbal Space Program include:
 
-* [**AntennaRange**](http://forum.kerbalspaceprogram.com/threads/56440), to "enforce and encourage antenna diversity".  Relaying is handled automatically, but only if you've used the right antennas for the job.  (We'll see how the 1.1 antenna system is when that comes.)
-	* I'll also advertise my [**AntennaRange Relays**](http://forum.kerbalspaceprogram.com/threads/129704) contract pack (for [**Contract Configurator**](http://forum.kerbalspaceprogram.com/threads/101604)), to give some guidance and financial support for deploying relays.
-* [**SCANSat**](http://forum.kerbalspaceprogram.com/threads/80369), to make biome and elevation maps (handy for planning landings) and require just a bit more effort when scanning for resources.
+* [**SCANSat**](http://forum.kerbalspaceprogram.com/threads/80369), to make biome and elevation maps globally available (vs. the limited-view and limited-access KerbNet system) and optionally require just a bit more effort when scanning for resources.
 * [**USI Life Support**](http://forum.kerbalspaceprogram.com/threads/116790), for a life support system which is simple and forgiving (unless you configure it to kill Kerbals).
-	* LouisB3's [**USILS patches**](https://github.com/LouisB3/USILS-Patches) and [**UKS-KPBS compatibility patches**](https://github.com/LouisB3/UKS-KPBS_Compatibility) to let other mods' base parts contribute more to a station's habitability.
-	* [**USI Kolonization Systems**](http://forum.kerbalspaceprogram.com/threads/79588), for ISRU that allows self-sustaining colonies (with some effort).
+	* [**USI Kolonization Systems**](http://forum.kerbalspaceprogram.com/threads/79588) and/or [**Pathfinder**](http://forum.kerbalspaceprogram.com/index.php?/topic/121397-113-pathfinder-100-space-camping-geoscience/), for ISRU that allows self-sustaining colonies (with some effort).
 	* You should also consider picking up [**Extraplanetary Launchpads**](http://forum.kerbalspaceprogram.com/threads/59545) and [**OSE Workshop**](http://forum.kerbalspaceprogram.com/threads/108234) (and [**Kerbal Inventory System**](http://forum.kerbalspaceprogram.com/threads/113111), OSE's dependency), as an extension of NASA's real-world interest in in-situ manufacturing and repair.  (And to give your bases something new to do.)
+	* To (loosely) simulate long-term physical impacts of microgravity, there's [**KeepFit**](http://forum.kerbalspaceprogram.com/index.php?/topic/61510-113wip-plugin0108627072016-keepfit-kerbal-fitness-degradation/).
 * Nertea's [**Cryogenic Engines**](http://forum.kerbalspaceprogram.com/threads/117766), [**Kerbal Atomics**](http://forum.kerbalspaceprogram.com/index.php?/topic/130503-105-kerbal-atomics-fancy-nuclear-engines-20022016-fixes-nfe-support/), and [**Near Future Technologies**](http://forum.kerbalspaceprogram.com/index.php?/topic/47786-105-near-future-technologies-merry-christmas-updated-all-to-105/) provide cryogenic, nuclear thermal, and ion and plasma propulsion systems, as well as a simple boiloff and boiloff mitigation mechanism for liquid hydrogen.  SMURFF will adjust their respective fuel tanks to match their actual or predicted performance.  (Except for lithium, which I haven't found any references for -- it gets adjusted, but it's largely a guess on my part.)
 
 Feel free to suggest other "real-ish" addons!  To give you some idea of what I'm looking for, addons suggested with SMURFF shall adhere to the following criteria:
 
-1. They shall not require individual parts to be configured in order to function (as e.g. RealFuels does) -- if an addon can't work out-of-the-box with any other addons that people use, it doesn't belong on the list.  (I guess AntennaRange could be said to violate this, since antennas do need their ranges configured individually, but antennas aren't that common and AR doesn't stop non-patched antennas from working, so I'm okay with including it.)
+1. They shall not require individual parts to be configured in order to function (as e.g. RealFuels does) -- if an addon can't work out-of-the-box with any other addons that people use, it doesn't belong on the list.
 2. They shall improve the realism of some aspect of KSP that is not very or not at all realistic.  (KSP has no life support whatsoever, so USI-LS is included, but it has mildly realistic aerodynamic and heating systems, so FAR and Deadly Reentry are not.)
 
 Of course, criterion zero is that I won't suggest an addon that I don't like and use (or have used or considered using) myself.  :)
@@ -137,6 +135,9 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 * 2016 08 15 (1.5.4): Tanks F-Ore Nothing
 	* Added an "Extra" patch to fix the procedural ore tank.  If you're using Procedural Parts, drop the "ProcOreFixer.cfg" patch in your GameData folder (anywhere will do).	
 	* The license is changed to the GPL v3 (or later).
+* 02016 10 2X (1.5.5): Snow Miser
+	* Updated CryoTanks patch to adapt to rebalance.
+	* Because the corresponding version of CryoTanks was released for KSP 1.2, **this version and later versions are not compatible with KSP 1.1.2 or 1.1.3**.
 
 ##Roadmap
 
