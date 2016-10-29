@@ -135,7 +135,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 * 2016 08 15 (1.5.4): Tanks F-Ore Nothing
 	* Added an "Extra" patch to fix the procedural ore tank.  If you're using Procedural Parts, drop the "ProcOreFixer.cfg" patch in your GameData folder (anywhere will do).	
 	* The license is changed to the GPL v3 (or later).
-* 02016 10 2X (1.5.5): Snow Miser
+* 02016 10 29 (1.5.5): Snow Miser
 	* Updated CryoTanks patch to adapt to rebalance.
 	* Because the corresponding version of CryoTanks was released for KSP 1.2, **this version and later versions are not compatible with KSP 1.1.2 or 1.1.3**.
 
