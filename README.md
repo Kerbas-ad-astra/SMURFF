@@ -138,6 +138,12 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 * 02016 10 29 (1.5.5): Snow Miser
 	* Updated CryoTanks patch to adapt to rebalance.
 	* Because the corresponding version of CryoTanks was released for KSP 1.2, **this version and later versions are not compatible with KSP 1.1.2 or 1.1.3**.
+* 02017 01 28 (1.6): Happy New Year
+	* Removed "Extra" patch for the procedural ore tank, as they've accepted my PR to add it directly to the part config.
+	* Engine patches now operate on minThrust as well as maxThrust (if someone should ever release an engine with nonzero minThrust).
+	* Reduced reaction-wheel authority on command pods in proportion to their mass reduction.
+	* Adjusted IFS patch. It works again, but note that IFS already has its own RSS patch, so SMURFF defers to that.
+	* Added support for Mark IV tank types.  Because the corresponding version of Mark IV was released for KSP 1.2.2, **this version and later versions are not compatible with KSP 1.2.0 or 1.2.1**.
 
 ##Roadmap
 
@@ -153,4 +159,4 @@ Even more thanks to ialdeboath and sarbian for the power of Module Manager.  Ser
 
 ##License
 
-Simple Module adjUstments for Real-ish Fuel-mass Fractions ("SMURFF") is copyright 2015-2016 Kerbas_ad_astra.  Configuration files are released under the [**GPL v3 license**](https://www.gnu.org/licenses/gpl-3.0) (or any later version).  Any redistributions must use a different name and folder (per section 7c).  All other rights (e.g. the SMURFF logo) reserved.
+Simple Module adjUstments for Real-ish Fuel-mass Fractions ("SMURFF") is copyright 2015-2017 Kerbas_ad_astra.  Configuration files are released under the [**GPL v3 license**](https://www.gnu.org/licenses/gpl-3.0) (or any later version).  Any redistributions must use a different name and folder (per section 7c).  All other rights (e.g. the SMURFF logo) reserved.
