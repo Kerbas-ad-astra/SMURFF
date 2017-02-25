@@ -144,6 +144,8 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Reduced reaction-wheel authority on command pods in proportion to their mass reduction.
 	* Adjusted IFS patch. It works again, but note that IFS already has its own RSS patch, so SMURFF defers to that.
 	* Added support for Mark IV tank types.  Because the corresponding version of Mark IV was released for KSP 1.2.2, **this version and later versions are not compatible with KSP 1.2.0 or 1.2.1**.
+* 02017 02 24 (1.6.1): B9-C
+	* Another tweak to the CryoTank patch, to avoid stepping into B9's CryoTank patches.
 
 ##Roadmap
 
