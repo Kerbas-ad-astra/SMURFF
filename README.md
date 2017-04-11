@@ -146,6 +146,9 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Added support for Mark IV tank types.  Because the corresponding version of Mark IV was released for KSP 1.2.2, **this version and later versions are not compatible with KSP 1.2.0 or 1.2.1**.
 * 02017 02 24 (1.6.1): B9-C
 	* Another tweak to the CryoTank patch, to avoid stepping into B9's CryoTank patches.
+* 02017 04 10 (1.6.2): Kerbals Not Smurffs
+	* Exclude Kerbals from SMURFF patching.
+	* Add pure-LF IFS patch.
 
 ##Roadmap
 
