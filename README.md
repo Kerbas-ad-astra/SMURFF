@@ -157,6 +157,8 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Adjusted tank math to remove divide-by-zero error.  Feel free to set tanklever = 0 now!
 	* Rebalance of tank adjustment factors to adapt to changes in Near Future Propulsion and CryoTanks (and some in response to user feedback).  LFO and hydrolox tanks got a bit of a buff, most everything else stays put.  Because the corresponding versions of NFP and CryoTanks were released for KSP 1.3.1, **this version and later versions are not compatible with KSP 1.2.2 or 1.3.0**.
 	* The "Extra" patch for Ven's Stock Revamp is more detailed, and now has different behavior for when CryoTanks is or is not installed.  Their performance is baselined to the Super Lightweight (Space Shuttle External) Tank.
+* 02018 03 21 (1.8.0): Kerbal Equinox
+	* Updated xenon patches to new balance of stock tanks.  Because those changes were made in KSP 1.4.0, **this version and later versions are not compatible with KSP 1.3.1**.
 
 ## Roadmap
 
