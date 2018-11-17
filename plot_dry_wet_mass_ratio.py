@@ -28,7 +28,7 @@ density_lox = 1.141 # kg/L
 # KSP probably made a bit a random choice given the rounded number
 
 # The fun thing is this whole consideration doesn't matter
-# Because are only interesting in the dry-mass of LH2 tanks for a real rocket
+# Because we are only interesting in the dry-mass of LH2 tanks for a real rocket
 # A real rocket tank runs at a predefined ratio for that given engine design
 # Thus includes a predefined ratio of LH2 and LOx in its tanks, thus also the combined dry-wet mass ratio
 # This will tell us what a decent load-bearing tank is like (the shuttle external tank is not part of the main structure)
