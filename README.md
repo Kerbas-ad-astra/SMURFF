@@ -48,7 +48,7 @@ SMURFF depends on [**Module Manager**](http://forum.kerbalspaceprogram.com/threa
 
 SMURFF is mainly intended for use with [**Real Solar System**](http://forum.kerbalspaceprogram.com/threads/55145).  It's why I made it, and that's where the default balance is set.  Try setting the levers to 0.5 for intermediate solar systems, like 64K or SKY.
 
-Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) (alternatively, [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064) or [**Near Future Launch Vehicles**](https://kerbal.curseforge.com/projects/near-future-launch-vehicles)) are recommended to get big rockets without big part counts.  1.875m rocket parts from [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/index.php?/topic/131556-104-5-hgr-community-fixes-home-grown-fixes-for-home-grown-rockets-v12-2016-mar-01/) (maintained by yours truly) and [**MOLE**](http://forum.kerbalspaceprogram.com/index.php?/topic/94352-alpha-11-mark-one-laboratory-extensions-mole-v0503/) are also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is proportionally much steeper than the jump from 2.5 to 3.75, so I've found 1.875m parts to be surprisingly handy.)
+Big rocket fractions (i.e. 1 kg into LEO = 25+ kg of rocket) call for big rockets, so [**SpaceY**](http://forum.kerbalspaceprogram.com/threads/100408) and [**SpaceY Expanded**](http://forum.kerbalspaceprogram.com/threads/133301) (alternatively, [**Behemoth Aerospace Engineering**](http://forum.kerbalspaceprogram.com/threads/124064) or [**Near Future Launch Vehicles**](https://kerbal.curseforge.com/projects/near-future-launch-vehicles)) are recommended to get big rockets without big part counts.  1.875m rocket parts from [**Home-Grown Rockets**](http://forum.kerbalspaceprogram.com/index.php?/topic/131556-104-5-hgr-community-fixes-home-grown-fixes-for-home-grown-rockets-v12-2016-mar-01/) (maintained by yours truly), [**MOLE**](http://forum.kerbalspaceprogram.com/index.php?/topic/94352-alpha-11-mark-one-laboratory-extensions-mole-v0503/), and the [**Making History**](https://kerbalspaceprogram.com/makinghistoryexpansion.php) expansion are also great for large upper stages and for payloads that are just too big for 1.25m rockets, but where 2.5m is overkill.  (Since thrust increases with the square of scale, and mass with the cube, all else being equal, the jump from 1.25 to 2.5 is proportionally much steeper than the jump from 2.5 to 3.75, so I've found 1.875m parts to be surprisingly handy.)
 
 Of course, the other way around needing massive launch vehicles is to make smaller probes, so I've also gotten quite a bit of mileage out of [**RLA (Reborn)**](https://forum.kerbalspaceprogram.com/index.php?/topic/175512-14-rla-reborn/) and [**Modular Rocket Systems**](https://forum.kerbalspaceprogram.com/index.php?/topic/83959-1213-modular-rocket-systems-v1131-2016-10-21-stock-alike-parts-pack/).  (Most of that mileage is from the "Sparkler" engine in MRS.)
 
@@ -158,11 +158,12 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* The "Extra" patch for Ven's Stock Revamp is more detailed, and now has different behavior for when CryoTanks is or is not installed.  Their performance is baselined to the Super Lightweight (Space Shuttle External) Tank.
 * 02018 03 21 (1.8.0): Kerbal Equinox
 	* Updated xenon patches to new balance of stock tanks.  Because those changes were made in KSP 1.4.0, **this version and later versions are not compatible with KSP 1.3.1**.
-* 02018 Sep 2X (1.8.1): No School Like Old School
+* 02018 Dec 0X (1.9.0): No School Like Old School
 	* Vintage Kerbal suit variants now excluded from patching.
 	* Mk1-3 pod now has a special "Extra" patch.
-	* Update ZBO power requirement patch to adapt to CryoTanks update.
+	* Update ZBO power requirement patch and Procedural Parts patch to adapt to CryoTanks update.
 	* New "Extra" patch for Universal Storage II tanks.
+	* New "Extra" patch to increase pressure and G tolerance of Fomalhaut probe (Venera lander).
 
 ## Roadmap
 
