@@ -163,7 +163,7 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* Mk1-3 pod now has a special "Extra" patch.
 	* Update ZBO power requirement patch and Procedural Parts patch to adapt to CryoTanks update.
 	* New "Extra" patch for Universal Storage II tanks.
-	* New "Extra" patch to increase pressure and G tolerance of Fomalhaut probe (Venera lander).
+	* New "Extra" patch to handle Tundra Exploration fuel tanks.
 
 ## Roadmap
 
