@@ -158,18 +158,19 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* The "Extra" patch for Ven's Stock Revamp is more detailed, and now has different behavior for when CryoTanks is or is not installed.  Their performance is baselined to the Super Lightweight (Space Shuttle External) Tank.
 * 02018 03 21 (1.8.0): Kerbal Equinox
 	* Updated xenon patches to new balance of stock tanks.  Because those changes were made in KSP 1.4.0, **this version and later versions are not compatible with KSP 1.3.1**.
-* 02019 05 19 (1.9.0): No School Like Old School
+* 02019 05 19 (1.9.0): The Power of the Special
 	* Vintage Kerbal suit variants now excluded from patching.
-	* Squad's new capsules (Mk1-3, Mk2, and Mk2 Lander Can) now have an "Extra" patch, since they're much lighter than their predecessors.
+	* Moved Ven's "Extra" patch into the main SMURFF folder, now called "Special".
+	* Squad's new capsules (Mk1-3, Mk2, and Mk2 Lander Can) now have a "Special" patch, since they're much lighter than their predecessors.
 	* Update ZBO power requirement patch and Procedural Parts patch to adapt to CryoTanks update.
-	* New "Extra" patch for Universal Storage II tanks.
-	* New "Extra" patch to handle Tundra Exploration fuel tanks.
+	* New "Special" patch for Universal Storage II tanks.
+	* New "Special" patch to handle Tundra Exploration fuel tanks.
 
 ## Roadmap
 
 As I get the time, I'll publish to CurseForge.
 
-If you find any classes of parts (i.e. anything that can be described by using Module Manager to filter by module, resource, mass, etc.) that get horribly mistreated, I'll make an adjustment.  That being said, I'm not planning to include special patches for parts that are already themselves outliers in the main distribution (although I *might* add some to the "Extras" folder) -- the whole point of SMURFF is to avoid that level of complication.
+If you find any classes of parts (i.e. anything that can be described by using Module Manager to filter by module, resource, mass, etc.) that get horribly mistreated, I'll make an adjustment.  I might even make a special patch for a particular mod's parts, if it's not too much trouble on my part.
 
 ## Credits
 
