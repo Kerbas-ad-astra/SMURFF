@@ -158,9 +158,9 @@ Please let me know in [**the forum thread**](http://forum.kerbalspaceprogram.com
 	* The "Extra" patch for Ven's Stock Revamp is more detailed, and now has different behavior for when CryoTanks is or is not installed.  Their performance is baselined to the Super Lightweight (Space Shuttle External) Tank.
 * 02018 03 21 (1.8.0): Kerbal Equinox
 	* Updated xenon patches to new balance of stock tanks.  Because those changes were made in KSP 1.4.0, **this version and later versions are not compatible with KSP 1.3.1**.
-* 02019 01 1X (1.9.0): No School Like Old School
+* 02019 05 19 (1.9.0): No School Like Old School
 	* Vintage Kerbal suit variants now excluded from patching.
-	* Mk1-3 pod now has a special "Extra" patch.
+	* Squad's new capsules (Mk1-3, Mk2, and Mk2 Lander Can) now have an "Extra" patch, since they're much lighter than their predecessors.
 	* Update ZBO power requirement patch and Procedural Parts patch to adapt to CryoTanks update.
 	* New "Extra" patch for Universal Storage II tanks.
 	* New "Extra" patch to handle Tundra Exploration fuel tanks.
